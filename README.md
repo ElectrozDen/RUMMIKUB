@@ -32,6 +32,7 @@ let me2 = Cons((3,4), NIL) ;;
 isempty me;; -> false</br>
 isempty NIL;; -> true
 
+### Code :
 ```
 let isempty (s:'e mset) : bool =
 match s with
@@ -49,6 +50,7 @@ match s with
 cardinal me ;; -> 6</br>
 cardinal me2;; -> 4
 
+### Code :
 ```
 let rec cardinal (s:'e mset) : int =
 match s with
@@ -66,6 +68,7 @@ match s with
 nb_occurences 3 me;; -> 2</br>
 nb_occurences 7 me;; -> 7
 
+### Code :
 ```
 let rec nb_occurences (e : 'e) (s : 'e mset) : int =
 match s with
@@ -86,6 +89,7 @@ member 7 me;; -> false</br>
 
 2 façons:
 
+### Code :
 ```
 let rec member (e:'e) (s:'e mset) : bool =
 match s with
@@ -112,6 +116,7 @@ else false
 subset me me;; -> true;;
 subset me me2;; > false;;</br>
 
+### Code :
 ```
 let rec subset (s1 : 'e mset) (s2 : 'e mset) : bool =
 match s1 with
@@ -131,6 +136,7 @@ match s1 with
 ### Exemple : 
 add (3,5) me;; ->  Cons ((3, 7), Cons ((4, 1), Cons ((6, 3), NIL)))
 
+### Code :
 ```
 let rec add (e: 'e melt) (s: 'e mset) : 'e mset =
   let (b1,b2)=e in match s with 
