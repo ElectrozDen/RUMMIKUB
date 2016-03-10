@@ -29,7 +29,7 @@ let me2 = Cons((3,4), NIL) ;;
 ### Sémantique: Vérifie si 'e mset est vide
 
 ### Exemples: 
-isempty me;; -> false
+isempty me;; -> false</br>
 isempty NIL;; -> true
 
 ```
@@ -46,7 +46,7 @@ match s with
 ### Sémentique : Donne le cardinal de 'e mset
 
 ### Exemples:
-cardinal me ;; -> 6
+cardinal me ;; -> 6</br>
 cardinal me2;; -> 4
 
 ```
@@ -63,7 +63,7 @@ match s with
 ### Sémentique : Donne le nombre d'occurences de l'élément 'e dans le multi-ensemble 'e mset
 
 ### Exemples:
-nb_occurences 3 me;; -> 2
+nb_occurences 3 me;; -> 2</br>
 nb_occurences 7 me;; -> 7
 
 ```
@@ -81,8 +81,8 @@ match s with
 ### Sémentique : Vérifie si l'élément 'e appartient au multi-ensemble 'e mset
 
 ### Exemples : 
-member 3 me;; -> true
-member 7 me;; -> false
+member 3 me;; -> true</br>
+member 7 me;; -> false</br>
 
 2 façons:
 
@@ -110,7 +110,7 @@ else false
 
 ### Exemples : 
 subset me me;; -> true;;
-subset me me2;; > false;;
+subset me me2;; > false;;</br>
 
 ```
 let rec subset (s1 : 'e mset) (s2 : 'e mset) : bool =
@@ -166,8 +166,8 @@ let rec remove (e : 'e melt) ( s : 'e mset) : 'e mset =
 ### Sémentique : Vérifie si le premier multi-ensemble est égal au deuxieme multi-ensemble
 
 ### Exemples : 
-equal me me;; -> true
-equal NIL me;; -> false
+equal me me;; -> true</br>
+equal NIL me;; -> false</br>
 equal me me2;; -> false
 
 ```
@@ -238,7 +238,7 @@ match s1 with
 ### Sémentique  : Renvoie le n ieme élément dans le multi-ensemble
 
 ### Exemples : 
-get 4 me;; -> 6
+get 4 me;; -> 6</br>
 get 2 me2;; -> 3
 
 ```
@@ -259,7 +259,7 @@ else a
 ### Sémentique : Renvoie un élément au hasard du multi-ensemble
 
 ### Exemples :
-getrandom me;; -> 3
+getrandom me;; -> 3</br>
 getrandom me;; -> 6
 
 ```
