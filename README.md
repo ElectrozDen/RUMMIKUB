@@ -154,6 +154,7 @@ let rec add (e: 'e melt) (s: 'e mset) : 'e mset =
 ### Exemple :
 remove (3,5) me;; ->  Cons ((4, 1), Cons ((6, 3), NIL))
 
+### Code :
 ```
 let rec remove (e : 'e melt) ( s : 'e mset) : 'e mset =
   let (b1,b2) = e in match s with
@@ -176,6 +177,7 @@ equal me me;; -> true</br>
 equal NIL me;; -> false</br>
 equal me me2;; -> false
 
+### Code :
 ```
 let equal ( s1 : 'e mset) ( s2 : 'e mset ) : bool = 
 	if cardinal s1 == cardinal s2 && subset s1 s2 == true
@@ -194,6 +196,7 @@ let equal ( s1 : 'e mset) ( s2 : 'e mset ) : bool =
 ### Exemple :
 sum me me2;; -> Cons ((3, 6), Cons ((4, 1), Cons ((6, 3), NIL)))
 
+### Code :
 ```
 let rec sum (s1 : 'e mset) (s2 : 'e mset) : 'e mset =
 match s1 with
@@ -211,6 +214,7 @@ match s1 with
 ### Exemple :
 intersection me me2;; -> Cons ((3, 2), NIL)
 
+### Code :
 ```
 let rec intersection (s1:'e mset) (s2:'e mset):'e mset=
 match s1 with 
@@ -227,6 +231,7 @@ match s1 with
 ### Exemple : 
 difference me2 me;; -> Cons ((3, 2), Cons ((4, 1), Cons ((6, 3), NIL)))
 
+### Code :
 ```
 let rec difference (s1 :'e mset) (s2 : 'e mset) : 'e mset =
 match s1 with 
@@ -247,6 +252,7 @@ match s1 with
 get 4 me;; -> 6</br>
 get 2 me2;; -> 3
 
+### Code :
 ```
 let rec get (n:int) (s:'e mset) : 'e =
 match s with
@@ -268,6 +274,7 @@ else a
 getrandom me;; -> 3</br>
 getrandom me;; -> 6
 
+### Code :
 ```
 let getrandom (s:'e mset):'e=
 (get (Random.int ((cardinal s)+1)) s);;
