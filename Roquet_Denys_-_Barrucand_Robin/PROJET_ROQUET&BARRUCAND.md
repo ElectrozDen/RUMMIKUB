@@ -4,7 +4,7 @@
  
 # Partie : Ensemble avec répétitions
 
-## Lien vers le source code : 
+## Lien vers le code source : 
 
 https://github.com/ElectrozDen/RUMMIKUB/blob/master/Roquet_Denys_-_Barrucand_Robin/src/partie2.ml
 
