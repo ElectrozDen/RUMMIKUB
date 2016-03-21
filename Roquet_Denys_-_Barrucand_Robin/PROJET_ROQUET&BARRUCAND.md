@@ -281,5 +281,5 @@ getrandom me;; -> 6
 ### Code :
 ```
 let getrandom (s:'e mset):'e=
-(get (Random.int ((cardinal s)+1)) s);;
+(get (Random.int (cardinal s))+1 s);;
 ```
